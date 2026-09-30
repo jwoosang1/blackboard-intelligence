@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.ipynb_checkpoints/
+
+# Model checkpoints / adapters (hosted externally — see README)
+checkpoints/*
+!checkpoints/
+!checkpoints/README.md
+*.safetensors
+*.bin
+
+# Large training data (regenerate with scripts in src/data/ — eval sets are tracked)
+data/**/train*.json
+data/**/train*.jsonl
+data/**/*.npz
+
+# Run outputs
+outputs/
+results/
+wandb/
+logs/
+*.out
+
+# Trace dumps / pickles
+*.pkl
+
+# OS
+.DS_Store

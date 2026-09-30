@@ -1,0 +1,23 @@
+# Core (training + inference)
+# LLaDA requires transformers<=4.47.1 (trust_remote_code breaks on 4.48+)
+torch>=2.5.0
+transformers<=4.47.1
+huggingface-hub>=0.24,<1.0
+peft
+omegaconf
+safetensors
+sentencepiece
+protobuf
+numpy
+setproctitle
+tqdm
+
+# Data generation / verification
+z3-solver        # ZebraLogic uniqueness verification
+ortools          # JSSP CP-SAT optimal-makespan certification
+
+# Figures
+matplotlib
+
+# Optional: experiment logging (enable use_wandb in configs)
+# wandb

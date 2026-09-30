@@ -1,0 +1,51 @@
+job_name: jssp
+output_dir: checkpoints
+seed: 2026
+
+# Training
+num_epochs: 50
+batch_size_device: 6
+grad_accum_steps: 4
+lr: 1.0e-4
+min_lr_ratio: 0.1
+warmup_steps: 100
+max_length: 512
+max_grad_norm: 1.0
+use_violation_only_target: false
+
+# Data
+train_puzzles: data/jssp/jssp_train.json
+eval_puzzles: data/jssp/jssp_eval.json
+t_min: 0.05
+t_max: 0.95
+
+# Model
+model_name: GSAI-ML/LLaDA-8B-Instruct
+torch_dtype: bf16
+trust_remote_code: true
+mask_token_id: 126336
+
+# LoRA
+use_lora: true
+lora_r: 256
+lora_alpha: 256
+lora_dropout: 0.05
+lora_target_modules: q_proj,k_proj,v_proj,o_proj
+
+# Logging / checkpointing
+logging_steps: 10
+max_keep_ckpts: 5
+eval_steps: 500
+
+# Generation-based eval
+
+
+# wandb
+use_wandb: true
+wandb_project: blackboard-intelligence
+wandb_entity: your-wandb-entity
+wandb_run_name: jssp
+
+# Resume / distributed
+resume: null
+ddp: true
