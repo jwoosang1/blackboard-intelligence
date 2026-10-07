@@ -12,7 +12,7 @@
 <p align="center">
   <a href="https://huggingface.co/6uvsoomJ/blackboard-intelligence"><img src="https://img.shields.io/badge/Checkpoints-Hugging%20Face-f9a03c?logo=huggingface" alt="Checkpoints"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-2ea44f.svg" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/arXiv-coming%20soon-B31B1B?logo=arxiv" alt="arXiv coming soon">
+  <a href="https://arxiv.org/abs/2609.38806"><img src="https://img.shields.io/badge/arXiv-2609.38806-B31B1B?logo=arxiv" alt="arXiv"></a>
 </p>
 
 > Reference implementation of Blackboard inference for ZebraLogic-Hard, Nurse Rostering, and Job-Shop Scheduling.
@@ -51,4 +51,12 @@ This repository is released under the [MIT License](LICENSE). Use of the base mo
 
 ## Citation
 
-The arXiv link and BibTeX entry will be added upon publication.
+If you find this work useful, please cite the [arXiv preprint](https://arxiv.org/abs/2609.38806):
+
+```bibtex
+@article{jeon2026blackboard,
+  title={Blackboard Intelligence Can Surpass Autoregressive on Globally Constrained Problems},
+  author={Jeon, Woosang and Kim, Jaeyeon and Kakade, Sham and Du, Yilun and Bedi, Amrit Singh and Chithanar, Arun Kumar and Lee, Chul and Kim, Taehyeong and Chen, Sitan},
+  journal={arXiv preprint arXiv:2609.38806},
+  year={2026}
+}
